@@ -1310,6 +1310,10 @@ button.btn{background:none;font:inherit;font-family:'Inter',sans-serif;font-size
   body:has(.nav-links.open) .to-top,
   body:has(#nebras-modal[style*="flex"]) .to-top{opacity:0;visibility:hidden}
 }
+
+/* Team page back button hover (from Nebras Redesign canvas) */
+.team-back:hover{background:#B07D2A!important;color:#ffffff!important}
+@media(min-width:760px){#team-page .team-member{grid-template-columns:320px minmax(0,1fr)!important}#team-page .team-member-info{border-left:0!important}}
 </style>
 </head>
 <body>
@@ -1778,69 +1782,64 @@ function switchDonation(tab, btn) {
 
 <!-- ── TEAM PAGE OVERLAY ── -->
 <div id="team-page">
-  <div class="team-header">
-    <span class="team-header-brand">Nebras Da'wah</span>
-    <button class="team-back" onclick="closeTeam()">← Back to Site</button>
-  </div>
-  <div class="team-body">
-    <div class="team-eyebrow">Our Team</div>
-    <h1 class="team-title">The People Behind <em>Nebras</em></h1>
-    <p class="team-intro">A dedicated team united by knowledge, sincerity, and commitment to authentic Islamic principles — serving the Nebraska Muslim community and beyond.</p>
-
-    <div class="team-grid">
-
-      <!-- Abu Juwairiyah -->
-      <div class="team-member">
-        <div class="team-member-img-wrap">
-          <div class="team-member-avatar">أج</div>
-          <span class="team-member-role">Co-Founder &amp; Admin</span>
-        </div>
-        <div class="team-member-info">
-          <div class="team-member-name">Abu Juwairiyah</div>
-          <div class="team-member-title">Co-Founder · Administrator</div>
-          <div class="team-member-bio">
-            <p>Abu Juwairiyah is the co-founder of Nebras and currently serves as an admin for the organization. Born and raised in Lincoln, Nebraska, AJ has dedicated over a decade to serving the Muslim communities of Lincoln and Omaha.</p>
-            <p>He has been actively involved in da'wah, education, and community development, volunteering in the local masjid and its weekend school for more than ten years. In addition, he served as a board member for five consecutive years, gaining valuable leadership experience. His work reflects a commitment to community growth through knowledge, service, and adherence to authentic Islamic principles.</p>
-            <p>AJ earned his Bachelor's degree in Speech-Language Pathology from the University of Nebraska–Lincoln (UNL) prior to pursuing his journey of seeking knowledge at the Islamic University of Madinah. He has completed a Diploma in Arabic Language and his Bachelor's from the Faculty of Sharī'ah. While in Madinah, AJ has had the opportunity and privilege to benefit from major scholars and complete books with various mashāyikh. His journey of seeking knowledge served as the foundation and driving force behind the establishment of Nebras.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Abu Salma -->
-      <div class="team-member">
-        <div class="team-member-img-wrap">
-          <div class="team-member-avatar">أب</div>
-          <span class="team-member-role">Co-Founder &amp; Treasurer</span>
-        </div>
-        <div class="team-member-info">
-          <div class="team-member-name">Abu Salma</div>
-          <div class="team-member-title">Co-Founder · Treasurer</div>
-          <div class="team-member-bio">
-            <p>Abu Salma E. Boston is Co-founder and Treasurer of Nebras, where he serves as the organization's principal steward of financial integrity and accountability. In this role, he oversees income and expense tracking, budget development, financial reporting, and regulatory compliance — ensuring that all funds are managed in strict accordance with Islamic principles and nonprofit governance standards.</p>
-            <p>His work reflects a strong commitment to amānah (trustworthiness), transparency, and sustainability, providing the Board and Trustees with clear, data-driven financial guidance to support responsible growth and community impact.</p>
-            <p>Professionally, Abu Salma is a Certified Lead Auditor with extensive experience in Quality Management Systems (QMS), Halal Management Systems (HMS), Integrated Management Systems (IMS), and regulatory compliance across a variety of service sectors in the US. He currently serves as a QMS Lead Auditor and HMS Sharī'ah Auditor. He holds a Bachelor's degree in Islamic Studies and a Master's degree in Islamic Commercial Law (2026), bringing together technical expertise and classical Islamic scholarship to ensure Nebras operates with both professional and ethical rigor.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Abu Sulaiman -->
-      <div class="team-member">
-        <div class="team-member-img-wrap">
-          <div class="team-member-avatar">أس</div>
-          <span class="team-member-role">Secretary</span>
-        </div>
-        <div class="team-member-info">
-          <div class="team-member-name">Abu Sulaiman</div>
-          <div class="team-member-title">Secretary</div>
-          <div class="team-member-bio">
-            <p>Abu Sulaiman serves as the Secretary of Nebras and is deeply dedicated to the growth and well-being of the Muslim community in Lincoln. He earned his Bachelor of Science in Horticulture and his Master's in Community and Regional Planning from the University of Nebraska–Lincoln, along with a graduate certificate in Public Administration and Management from the University of Nebraska at Omaha.</p>
-            <p>For over a decade, Abu Sulaiman has been an active volunteer in the Lincoln and Omaha communities, including more than five years serving as Vice-Principal and Principal at the weekend Islamic school. His leadership in service is guided by the values and methodology of the first generations in Islam — emphasizing sincerity, knowledge, and community stewardship.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<div class="team-header" style="background: #0A4A4A; padding: 20px 48px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #B07D2A; box-shadow: 0 6px 24px rgba(5,40,40,.45)">
+<span class="team-header-brand" style="color: #ffffff; font-family: 'EB Garamond',serif; font-size: 1.5rem; letter-spacing: .02em; text-shadow: 0 0 18px rgba(176,125,42,.55), 0 2px 4px rgba(0,0,0,.35)">Nebras Da'wah</span>
+<button class="team-back" onclick="closeTeam()" style="color: #f1ece0; font-size: .9rem; border: 1px solid rgba(241,236,224,.45); padding: 8px 16px; border-radius: 999px; box-shadow: 0 0 14px rgba(176,125,42,.25); background: transparent; cursor: pointer; font-family: inherit">← Back to Site</button>
+</div>
+<div class="team-body" style="background: #f1ece0; padding: 72px 48px 96px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<div class="team-eyebrow" style="color: #B07D2A; font-size: .8rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600">Our Team</div>
+<h1 class="team-title" style="font-family: 'EB Garamond',serif; font-size: 4rem; font-weight: 400; color: #0b1215; text-align: center; margin: 0; line-height: 1.1">The People Behind <em style="color: #0A4A4A; font-style: italic">Nebras</em></h1>
+<p class="team-intro" style="max-width: 640px; text-align: center; color: #3d4a4e; font-size: 1.1rem; line-height: 1.8; margin: 0 0 24px">A dedicated team united by knowledge, sincerity, and commitment to authentic Islamic principles — serving the Nebraska Muslim community and beyond.</p>
+<div class="team-grid" style="display: flex; flex-direction: column; gap: 40px; width: 100%; max-width: 1120px">
+<!-- Abu Juwairiyah -->
+<div class="team-member" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); background: #fffdf7; border: 1px solid rgba(11,18,21,.1); border-radius: 6px; overflow: hidden; box-shadow: 0 18px 50px rgba(11,18,21,.18), 0 4px 12px rgba(10,74,74,.12); border-top: 4px solid #B07D2A">
+<div class="team-member-img-wrap" style="background: radial-gradient(circle at 50% 35%, #12706f 0%, #0A4A4A 55%, #06302f 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 48px 24px; min-width: 0; max-width: 320px; box-shadow: inset -12px 0 30px rgba(0,0,0,.28)">
+<div class="team-member-avatar" style="width: 140px; height: 140px; border-radius: 50%; background: #f1ece0; color: #0A4A4A; border: 4px solid #B07D2A; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-family: 'Scheherazade New','Amiri',serif; box-sizing: border-box; box-shadow: 0 0 0 6px rgba(176,125,42,.2), 0 0 34px rgba(176,125,42,.55), 0 10px 24px rgba(0,0,0,.4)">أج</div>
+<span class="team-member-role" style="color: #ffffff; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.3); padding: 6px 14px; border-radius: 999px; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,.3), 0 0 10px rgba(255,255,255,.12)">Co-Founder &amp; Admin</span>
+</div>
+<div class="team-member-info" style="padding: 40px 44px; display: flex; flex-direction: column; gap: 8px; flex: 2 1 480px">
+<div class="team-member-name" style="font-family: 'EB Garamond',serif; font-size: 2.1rem; color: #0b1215; line-height: 1.2">Abu Juwairiyah</div>
+<div class="team-member-title" style="color: #B07D2A; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; margin-bottom: 12px">Co-Founder · Administrator</div>
+<div class="team-member-bio" style="display: flex; flex-direction: column; gap: 14px; color: #2f3b3f; font-size: .98rem; line-height: 1.85">
+<p style="margin: 0">Abu Juwairiyah is the co-founder of Nebras and currently serves as an admin for the organization. Born and raised in Lincoln, Nebraska, AJ has dedicated over a decade to serving the Muslim communities of Lincoln and Omaha.</p>
+<p style="margin: 0">He has been actively involved in da'wah, education, and community development, volunteering in the local masjid and its weekend school for more than ten years. In addition, he served as a board member for five consecutive years, gaining valuable leadership experience. His work reflects a commitment to community growth through knowledge, service, and adherence to authentic Islamic principles.</p>
+<p style="margin: 0">AJ earned his Bachelor's degree in Speech-Language Pathology from the University of Nebraska–Lincoln (UNL) prior to pursuing his journey of seeking knowledge at the Islamic University of Madinah. He has completed a Diploma in Arabic Language and his Bachelor's from the Faculty of Sharī'ah. While in Madinah, AJ has had the opportunity and privilege to benefit from major scholars and complete books with various mashāyikh. His journey of seeking knowledge served as the foundation and driving force behind the establishment of Nebras.</p>
+</div>
+</div>
+</div>
+<!-- Abu Salma -->
+<div class="team-member" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); background: #fffdf7; border: 1px solid rgba(11,18,21,.1); border-radius: 6px; overflow: hidden; box-shadow: 0 18px 50px rgba(11,18,21,.18), 0 4px 12px rgba(10,74,74,.12); border-top: 4px solid #B07D2A">
+<div class="team-member-img-wrap" style="background: radial-gradient(circle at 50% 35%, #12706f 0%, #0A4A4A 55%, #06302f 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 48px 24px; min-width: 0; max-width: 320px; box-shadow: inset -12px 0 30px rgba(0,0,0,.28)">
+<div class="team-member-avatar" style="width: 140px; height: 140px; border-radius: 50%; background: #f1ece0; color: #0A4A4A; border: 4px solid #B07D2A; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-family: 'Scheherazade New','Amiri',serif; box-sizing: border-box; box-shadow: 0 0 0 6px rgba(176,125,42,.2), 0 0 34px rgba(176,125,42,.55), 0 10px 24px rgba(0,0,0,.4)">أب</div>
+<span class="team-member-role" style="color: #ffffff; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.3); padding: 6px 14px; border-radius: 999px; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,.3), 0 0 10px rgba(255,255,255,.12)">Co-Founder &amp; Treasurer</span>
+</div>
+<div class="team-member-info" style="padding: 40px 44px; display: flex; flex-direction: column; gap: 8px; flex: 2 1 480px">
+<div class="team-member-name" style="font-family: 'EB Garamond',serif; font-size: 2.1rem; color: #0b1215; line-height: 1.2">Abu Salma</div>
+<div class="team-member-title" style="color: #B07D2A; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; margin-bottom: 12px">Co-Founder · Treasurer</div>
+<div class="team-member-bio" style="display: flex; flex-direction: column; gap: 14px; color: #2f3b3f; font-size: .98rem; line-height: 1.85">
+<p style="margin: 0">Abu Salma E. Boston is Co-founder and Treasurer of Nebras, where he serves as the organization's principal steward of financial integrity and accountability. In this role, he oversees income and expense tracking, budget development, financial reporting, and regulatory compliance — ensuring that all funds are managed in strict accordance with Islamic principles and nonprofit governance standards.</p>
+<p style="margin: 0">His work reflects a strong commitment to amānah (trustworthiness), transparency, and sustainability, providing the Board and Trustees with clear, data-driven financial guidance to support responsible growth and community impact.</p>
+<p style="margin: 0">Professionally, Abu Salma is a Certified Lead Auditor with extensive experience in Quality Management Systems (QMS), Halal Management Systems (HMS), Integrated Management Systems (IMS), and regulatory compliance across a variety of service sectors in the US. He currently serves as a QMS Lead Auditor and HMS Sharī'ah Auditor. He holds a Bachelor's degree in Islamic Studies and a Master's degree in Islamic Commercial Law (2026), bringing together technical expertise and classical Islamic scholarship to ensure Nebras operates with both professional and ethical rigor.</p>
+</div>
+</div>
+</div>
+<!-- Abu Sulaiman -->
+<div class="team-member" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); background: #fffdf7; border: 1px solid rgba(11,18,21,.1); border-radius: 6px; overflow: hidden; box-shadow: 0 18px 50px rgba(11,18,21,.18), 0 4px 12px rgba(10,74,74,.12); border-top: 4px solid #B07D2A">
+<div class="team-member-img-wrap" style="background: radial-gradient(circle at 50% 35%, #12706f 0%, #0A4A4A 55%, #06302f 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 48px 24px; min-width: 0; max-width: 320px; box-shadow: inset -12px 0 30px rgba(0,0,0,.28)">
+<div class="team-member-avatar" style="width: 140px; height: 140px; border-radius: 50%; background: #f1ece0; color: #0A4A4A; border: 4px solid #B07D2A; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-family: 'Scheherazade New','Amiri',serif; box-sizing: border-box; box-shadow: 0 0 0 6px rgba(176,125,42,.2), 0 0 34px rgba(176,125,42,.55), 0 10px 24px rgba(0,0,0,.4)">أس</div>
+<span class="team-member-role" style="color: #ffffff; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.3); padding: 6px 14px; border-radius: 999px; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,.3), 0 0 10px rgba(255,255,255,.12)">Secretary</span>
+</div>
+<div class="team-member-info" style="padding: 40px 44px; display: flex; flex-direction: column; gap: 8px; flex: 2 1 480px">
+<div class="team-member-name" style="font-family: 'EB Garamond',serif; font-size: 2.1rem; color: #0b1215; line-height: 1.2">Abu Sulaiman</div>
+<div class="team-member-title" style="color: #B07D2A; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; margin-bottom: 12px">Secretary</div>
+<div class="team-member-bio" style="display: flex; flex-direction: column; gap: 14px; color: #2f3b3f; font-size: .98rem; line-height: 1.85">
+<p style="margin: 0">Abu Sulaiman serves as the Secretary of Nebras and is deeply dedicated to the growth and well-being of the Muslim community in Lincoln. He earned his Bachelor of Science in Horticulture and his Master's in Community and Regional Planning from the University of Nebraska–Lincoln, along with a graduate certificate in Public Administration and Management from the University of Nebraska at Omaha.</p>
+<p style="margin: 0">For over a decade, Abu Sulaiman has been an active volunteer in the Lincoln and Omaha communities, including more than five years serving as Vice-Principal and Principal at the weekend Islamic school. His leadership in service is guided by the values and methodology of the first generations in Islam — emphasizing sincerity, knowledge, and community stewardship.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <script>
